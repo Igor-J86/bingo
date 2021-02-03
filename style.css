@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body {
+    background:#ebebeb;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size:16px;
+    margin:0;
+    padding:0;
+    width:100%;
+    
+}
+h1 {
+    font-size: 3em;
+    margin:0 0 20px;
+}
+.wrapper {
+    padding:10px;
+    margin:0 auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:100vh;
+    max-width:480px;
+}
+
+.bingo-board {
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 3px 8px #ccc;
+    display:flex;
+    flex-direction: column;
+    font-size:1.8em;
+    width:100%;
+}
+
+.bingo-board .row,
+.bingo-board .bingorow {
+    display:flex;
+    flex-direction: row;
+    border-collapse: collapse;
+}
+
+.bingo-board .row .cell,
+.bingo-board .bingorow .headingcell {
+    background:#fafafa;
+    border:1px solid #ebebeb;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:20%;
+    height:80px;
+    cursor:pointer;
+    line-height:1;
+}
+
+.bingo-board .row .cell.clicked span {
+    background:#af3a40;
+    color:#fff;
+    width:58px;
+    height:58px;
+    border-radius:50%;
+}
+.bingo-board .row .cell.clicked.green span {
+    background:#71b283;
+}
+
+.bingo-board .row .cell span,
+.bingo-board .bingorow .headingcell span {
+    width:100%;
+    height:100%;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    user-select: none;
+}
+
+.bingo-board .bingorow .headingcell {
+    background:#333;
+    color:#fff;
+}
+
+.picked-numbers {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin:20px 0;
+    height:40px;
+}
+
+.picked-numbers span {
+    background:#fff;
+    border-radius:50%;
+    padding:5px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:30px;
+    height:30px;
+    margin:2px;
+}
+
+.btn {
+    padding:10px 20px;
+    background:#c30c15;
+    border-radius:4px;
+    outline:none;
+    color:#fff;
+    border:none;
+    margin:30px 0;
+    cursor:pointer;
+    font-size:30px;
+}
+
+.bingo-number span {
+    font-size: 168px;
+    text-align:center;
+}
