@@ -45,7 +45,7 @@ function spinNumbers() {
             spinBtn.removeAttribute('disabled','disabled');
             bingoNumSpinned.innerHTML = '<span>' + bingoNum + '</span>';
             playedNums.innerHTML += '<span>' + bingoNum + '</span>';
-        },2100);
+        },2200);
 
         let num = bingoNumbers.indexOf(bingoNum);
         bingoNumbers.splice(num, 1);
